@@ -1,0 +1,90 @@
+/* Eléments principaux de la page */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 1em;
+    color:#000000;
+    background-color:#FFFFFF;
+}
+
+
+h1{
+    text-align:center;
+    font-size:1.8em;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#navbar{
+    left:0;
+    right:0;
+    top:0;
+    position: fixed;
+    width: 300px;
+    border-right: solid #9FA1A0;
+    
+}
+
+nav li{
+    list-style-type: none;
+    padding: 10px 0 10px 35px;
+    border-top: thin solid #9FA1A0;
+    margin-left: -41px;
+    margin-right: -2px;
+    
+}
+
+main{
+    margin-left:300px;
+    padding-left: 35px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.code{
+    background-color: #F7F7F7;
+    padding: 15px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px)
+{
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+
+.selectnav { display: none; }
+
+}
+
+/* small screen */
+@media screen and (max-width: 600px) {
+  .js #menu { display: none; }
+  .js .selectnav { 
+      display: block;
+      margin: auto;
+ }
+
+
+#navbar{
+    width:auto;
+    display:block;
+    background: url("bg.png")
+}
+
+
+#main-doc{
+    width:auto;
+    display:table-row;
+    
+}
+}
+
